@@ -63,7 +63,7 @@ const ImageSliderWrapper = styled.div`
 
   .game-slider{
     .slider-item{
-      height: 400px;
+      height: 300px;
       padding: 16px;
       outline: 0;
 
