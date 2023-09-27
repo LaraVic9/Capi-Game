@@ -39,6 +39,9 @@ const Navbar = () => {
               <li className='nav-item'>
                 <Link to = "/games" className='nav-link'>games</Link>
               </li>
+              <li className='nav-item'>
+                <Link to = "/about" className='nav-link'>about us</Link>
+              </li>
             </ul>
 
             <ul className='connect-list d-flex justify-content-center align-items-center mt-5 flex-wrap'>

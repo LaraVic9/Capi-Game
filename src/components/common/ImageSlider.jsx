@@ -11,7 +11,7 @@ const ImageSlider = () => {
     arrows: true,
     centerMode: true,
     infinite: true,
-    centerPadding: "60px",
+    centerPadding: "10px",
     slidesToShow: 3,
     slidesToScroll: 1,
     speed: 500,
