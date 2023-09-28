@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Home, Error, ViewGameAll, ViewGameDetails, ViewStoreAll, ViewStoreDetails, ViewCreatorAll } from '../views/index';
+import { Home, Error, ViewGameAll, ViewGameDetails, ViewStoreAll, ViewStoreDetails, ViewCreatorAll, ViewAboutUs, ViewSidebar } from '../views/index';
 import BaseLayout from "../layouts/BaseLayout";
 
 const AppRouter = () => {
@@ -14,6 +14,8 @@ const AppRouter = () => {
           <Route path = "/stores" element={<ViewStoreAll />} />
           <Route path = "/stores/:storeId" element={<ViewStoreDetails />} />
           <Route path = "/creators" element = { <ViewCreatorAll />} />
+          <Route path = "/about"  element = { <ViewAboutUs/> } />
+          <Route path = "/sidebar"  element = { <ViewSidebar/> } />
           <Route path = "*" element = { <Error />} />
         </Route>
       </Routes>

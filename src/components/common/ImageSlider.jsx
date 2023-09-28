@@ -11,7 +11,7 @@ const ImageSlider = () => {
     arrows: true,
     centerMode: true,
     infinite: true,
-    centerPadding: "60px",
+    centerPadding: "10px",
     slidesToShow: 3,
     slidesToScroll: 1,
     speed: 500,
@@ -63,7 +63,7 @@ const ImageSliderWrapper = styled.div`
 
   .game-slider{
     .slider-item{
-      height: 400px;
+      height: 300px;
       padding: 16px;
       outline: 0;
 

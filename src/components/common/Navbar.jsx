@@ -39,6 +39,12 @@ const Navbar = () => {
               <li className='nav-item'>
                 <Link to = "/games" className='nav-link'>games</Link>
               </li>
+              <li className='nav-item'>
+                <Link to = "/about" className='nav-link'>about us</Link>
+              </li>
+              <li className='nav-item'>
+                <Link to = "/sidebar" className='nav-link'>Genres</Link>
+              </li>
             </ul>
 
             <ul className='connect-list d-flex justify-content-center align-items-center mt-5 flex-wrap'>
@@ -76,6 +82,11 @@ export default Navbar;
 const NavbarWrapper = styled.div`
   min-height: 78px;
   background: #090624;
+  position: fixed;
+  display: inline;
+  width: 100%;
+  top: 0;
+  z-index: 99;
 
   .navbar-brand{
     font-weight: 700;
