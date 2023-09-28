@@ -42,9 +42,12 @@ const Navbar = () => {
               <li className='nav-item'>
                 <Link to = "/about" className='nav-link'>about us</Link>
               </li>
+<<<<<<< HEAD
               <li className='nav-item'>
                 <Link to = "/sidebar" className='nav-link'>Genres</Link>
               </li>
+=======
+>>>>>>> ae63101a402fd85dacd7795440c348dd2d7dd7a5
             </ul>
 
             <ul className='connect-list d-flex justify-content-center align-items-center mt-5 flex-wrap'>

@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
+<<<<<<< HEAD
 
 import {
     selectAllGenres,
@@ -31,6 +32,12 @@ const AboutUsPage = () => {
     const gamesStatus = useSelector(selectAllGamesStatus);
     const genres = useSelector(selectAllGenres);
     const genresStatus = useSelector(selectAllGenresStatus);
+=======
+import {  Title } from '../../components/common';
+
+const AboutUsPage = () => {
+
+>>>>>>> ae63101a402fd85dacd7795440c348dd2d7dd7a5
     return (
         <AboutUsPageWrapper>
             <div className='sc-aboutus section'>
@@ -40,6 +47,7 @@ const AboutUsPage = () => {
                         secondText: "team"
                     }}/>
                 </div>
+<<<<<<< HEAD
                 <section>
                     <div>
                         <Title titleName={{
@@ -50,6 +58,8 @@ const AboutUsPage = () => {
                       
                     </div>
                 </section>
+=======
+>>>>>>> ae63101a402fd85dacd7795440c348dd2d7dd7a5
             </div>
         </AboutUsPageWrapper>
     )
@@ -63,6 +73,7 @@ background-color: var(--clr-violet-dark-active);
     min-height: 100vh;
     padding-top: 65px;
 }
+<<<<<<< HEAD
 .sc-popular {
     background-color: var(--clr-violet-dark-active);
     .section-btn {
@@ -96,4 +107,6 @@ background-color: var(--clr-violet-dark-active);
   .sc-stores {
     min-height: 841px;
   }
+=======
+>>>>>>> ae63101a402fd85dacd7795440c348dd2d7dd7a5
 `
