@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
-
+import { FaGamepad } from 'react-icons/fa';
 
 import {
     selectAllGenres,
@@ -20,52 +20,48 @@ import {
   } from "../../components/common/index";
 
   
-const AboutUsPage = () => {
+const Welcome = () => {
 
-    useEffect(() => {
-        dispatch(fetchAsyncGenres());
-       
-      }, []);
-
-    const dispatch = useDispatch();
-    const games = useSelector(selectAllGames);
-    const gamesStatus = useSelector(selectAllGamesStatus);
-    const genres = useSelector(selectAllGenres);
-    const genresStatus = useSelector(selectAllGenresStatus);
-
-
+  
 
     return (
         <AboutUsPageWrapper>
-            <div className='sc-aboutus section'>
+            <div className='sc-aboutus'>
                 <div className='container'> 
                     <Title titleName={{
-                        firstText: "our",
-                        secondText: "team"
+                        firstText: "Wel",
+                        secondText: "Come"
                     }}/>
-                </div>
-
+                   
+               
                 <section>
-                    <div>
-                        <Title titleName={{
-                            firstText: "top",
-                            secondText: "genres"
-                        }}/>
-                      
-                      
-                    </div>
+                 
+                    <a href='/Login'>
+                    <button type="button" className='banner-btn d-flex align-items-center'>     
+                      <span className='btn-text text-green '>Login</span>
+                    </button>
+                    </a>
+                    <a href='/Signup'>
+                    <button type="button" className='banner-btn d-flex align-items-center'>     
+                      <span className='btn-text text-green '>Sign Up</span>
+                    </button>
+                    </a>
                 </section>
-
+                </div>
+                
             </div>
+           
+
         </AboutUsPageWrapper>
     )
 }
 
-export default AboutUsPage;
+export default Welcome;
 
 const AboutUsPageWrapper = styled.div`
 background-color: var(--clr-violet-dark-active);
 .sc-aboutus{
+  display: flex;
     min-height: 100vh;
     padding-top: 65px;
 }
@@ -103,5 +99,38 @@ background-color: var(--clr-violet-dark-active);
   .sc-stores {
     min-height: 841px;
   }
+.button {
+  background-color: #fff;
+  width: 240px;
+  height: 40px;
+  border-radius: 40px;
+  margin: 5px;
+}
+
+.banner-btn{
+  min-width: 140px;
+  width: 240px;
+  height: 45px;
+  padding-left: 38%;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px solid var(--clr-green-normal);
+  margin-top: 33px;
+
+
+  .btn-icon{
+    margin-right: 16px;
+  }
+
+  &:hover{
+    background-color: var(--clr-green-normal);
+    .btn-text{
+      color: var(--clr-white);
+      
+    }
+  }
+}
+
 
 `

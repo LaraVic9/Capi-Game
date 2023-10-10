@@ -17,6 +17,8 @@ export default PageNotFound;
 
 const PageNotFoundWrapper = styled.div`
 background-color: var(--clr-violet-dark-active);
+  padding-bottom: 20%;
+  padding-top: 200px;
   .value-404{
     font-size: 60px;
     font-weight: 800;

@@ -75,10 +75,11 @@ const TabsWrapper = styled.div`
     padding-bottom: 60px;
     /* box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
     transition: var(--transition-default);
+    background-color: var(--clr-violet-dark-active);
 
     .tabs-buttons-close{
       position: absolute;
-      right: -32px;
+      right: -0px;
       top: 0;
       width: 32px;
       height: 32px;

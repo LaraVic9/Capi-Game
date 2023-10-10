@@ -20,48 +20,28 @@ import {
   } from "../../components/common/index";
 
   
-const AboutUsPage = () => {
+const SignUp = () => {
 
-    useEffect(() => {
-        dispatch(fetchAsyncGenres());
-       
-      }, []);
-
-    const dispatch = useDispatch();
-    const games = useSelector(selectAllGames);
-    const gamesStatus = useSelector(selectAllGamesStatus);
-    const genres = useSelector(selectAllGenres);
-    const genresStatus = useSelector(selectAllGenresStatus);
-
-
+  
 
     return (
         <AboutUsPageWrapper>
             <div className='sc-aboutus section'>
                 <div className='container'> 
                     <Title titleName={{
-                        firstText: "our",
-                        secondText: "team"
+                        firstText: "Sign",
+                        secondText: "Up"
                     }}/>
                 </div>
 
-                <section>
-                    <div>
-                        <Title titleName={{
-                            firstText: "top",
-                            secondText: "genres"
-                        }}/>
-                      
-                      
-                    </div>
-                </section>
+               
 
             </div>
         </AboutUsPageWrapper>
     )
 }
 
-export default AboutUsPage;
+export default SignUp;
 
 const AboutUsPageWrapper = styled.div`
 background-color: var(--clr-violet-dark-active);
