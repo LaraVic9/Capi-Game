@@ -19,33 +19,43 @@ import {
     Title,
   } from "../../components/common/index";
 
-  
+import { banner_image } from '../../utils/images';  
+
 const Login = () => {
 
   
 
     return (
-        <AboutUsPageWrapper>
-            <div className='sc-aboutus section'>
+        <LoginUsPageWrapper style = {{
+          background: `linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), linear-gradient(248.75deg, rgba(0, 159, 157, 0.41) 0%, rgba(15, 10, 60, 0.41) 38.46%), url(${banner_image}) center/cover no-repeat`
+        }}>
+             <div className='sc-aboutus'>
                 <div className='container'> 
-                    <Title titleName={{
-                        firstText: "Lo",
-                        secondText: "gin"
-                    }}/>
-                </div>
-
+                   
+                   
                
-
+                <section>
+                  <p>
+                    <input placeholder='email' className='input'/>
+                    </p>
+                    <p>
+                    <input placeholder='senha' className='input'/>
+                    </p>
+                   
+                </section>
+                </div>
+                
             </div>
-        </AboutUsPageWrapper>
+        </LoginUsPageWrapper>
     )
 }
 
 export default Login;
 
-const AboutUsPageWrapper = styled.div`
+const LoginUsPageWrapper = styled.div`
 background-color: var(--clr-violet-dark-active);
 .sc-aboutus{
+  display: flex;
     min-height: 100vh;
     padding-top: 65px;
 }
@@ -83,5 +93,45 @@ background-color: var(--clr-violet-dark-active);
   .sc-stores {
     min-height: 841px;
   }
+.button {
+  background-color: #fff;
+  width: 240px;
+  height: 40px;
+  border-radius: 40px;
+  margin: 5px;
+}
+
+.banner-btn{
+  min-width: 140px;
+  width: 240px;
+  height: 45px;
+  padding-left: 38%;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px solid var(--clr-green-normal);
+  margin-top: 33px;
+
+
+  .btn-icon{
+    margin-right: 16px;
+  }
+
+  &:hover{
+    background-color: var(--clr-green-normal);
+    .btn-text{
+      color: var(--clr-white);
+      
+    }
+  }
+}
+
+.input {
+  width: 280px;
+  height: 30px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  padding: 0 10px 0 10px;
+}
 
 `
