@@ -99,7 +99,7 @@ const TabsWrapper = styled.div`
       width: 200px;
     }
 
-    @media screen and (max-width: 1280px){
+    @media screen and (max-width: 1080px){
       transform: translateX(-88%);
       width: 286px;
 

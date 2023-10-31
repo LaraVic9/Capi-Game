@@ -19,6 +19,8 @@ import {
     Title,
   } from "../../components/common/index";
 
+
+
 import { banner_image } from '../../utils/images';  
 
 const Login = () => {
@@ -36,11 +38,14 @@ const Login = () => {
                
                 <section>
                   <p>
-                    <input placeholder='email' className='input'/>
+                    <input placeholder='email' className='input' type='email'/>
                     </p>
                     <p>
-                    <input placeholder='senha' className='input'/>
+                    <input placeholder='senha' className='input' type='password'/>
                     </p>
+                    <button type="button" className='banner-btn d-flex align-items-center'>     
+                      <span className='btn-text text-green '>Login</span>
+                    </button>
                    
                 </section>
                 </div>
@@ -103,7 +108,7 @@ background-color: var(--clr-violet-dark-active);
 
 .banner-btn{
   min-width: 140px;
-  width: 240px;
+  width: 100%;
   height: 45px;
   padding-left: 38%;
   font-size: 16px;
@@ -128,7 +133,7 @@ background-color: var(--clr-violet-dark-active);
 
 .input {
   width: 280px;
-  height: 30px;
+  height: 40px;
   margin-bottom: 20px;
   border-radius: 3px;
   padding: 0 10px 0 10px;

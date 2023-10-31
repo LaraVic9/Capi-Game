@@ -44,7 +44,7 @@ const Navbar = () => {
               </li>
 
               <li className='nav-item'>
-                <Link to = "/sidebar" className='nav-link'>Genres</Link>
+                <Link to = "/genres" className='nav-link'>Genres</Link>
               </li>
 
             </ul>

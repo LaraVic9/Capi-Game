@@ -64,15 +64,16 @@ const TabsWrapper = styled.div`
   position: relative;
   min-height: 1000px;
   background-color: var(--clr-violet-dark-active);
+  padding-top: 60px;
 
   .tabs-buttons{
     position: absolute;
     left: 0;
     top: 0;
     width: 286px;
-    z-index: 99;
+    z-index: 1;
     padding-top: 60px;
-    padding-bottom: 100px;
+    padding-bottom: 170px;
     /* box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
     transition: var(--transition-default);
     background-color: var(--clr-violet-dark-active);
@@ -100,7 +101,7 @@ const TabsWrapper = styled.div`
       width: 200px;
     }
 
-    @media screen and (max-width: 1280px){
+    @media screen and (max-width: 1080px){
       transform: translateX(-88%);
       width: 286px;
 

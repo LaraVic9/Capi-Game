@@ -19,7 +19,7 @@ const AppRouter = () => {
           <Route path = "/creators" element = { <ViewCreatorAll />} />
           <Route path = "/about"  element = { <ViewAboutUs/> } />
 
-          <Route path = "/sidebar"  element = { <ViewSidebar/> } />
+          <Route path = "/genres"  element = { <ViewSidebar/> } />
 
 
           <Route path = "*" element = { <Error />} />

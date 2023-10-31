@@ -45,6 +45,7 @@ GameItem.propTypes = {
 const GameItemWrapper = styled.div`
   display: flex;
   flex-direction: column;
+ 
 
   .card-top{
     height: 280px;
