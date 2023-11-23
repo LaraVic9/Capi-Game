@@ -18,8 +18,9 @@ import {
    
     Title,
   } from "../../components/common/index";
-
-
+  import { Link } from "react-router-dom";
+import { useState } from 'react';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 
 import { banner_image } from '../../utils/images';  
 
@@ -36,7 +37,11 @@ const Login = () => {
                    
                    
                
-                <section>
+                <section className='section-login'>
+                <Title titleName={{
+                        firstText: "Sign",
+                        secondText: "In"
+                    }}/>
                   <p>
                     <input placeholder='email' className='input' type='email'/>
                     </p>
@@ -46,7 +51,11 @@ const Login = () => {
                     <button type="button" className='banner-btn d-flex align-items-center'>     
                       <span className='btn-text text-green '>Login</span>
                     </button>
-                   
+                    <p>
+                    <Link to="/Signup" className="text">               
+                        I don't have an account
+                    </Link>
+                    </p>
                 </section>
                 </div>
                 
@@ -59,6 +68,23 @@ export default Login;
 
 const LoginUsPageWrapper = styled.div`
 background-color: var(--clr-violet-dark-active);
+
+.container {
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 30px;
+  width: 350px;
+}
+
+.section-login {
+  justify-content: center;
+  align-items: center;
+}
+
 .sc-aboutus{
   display: flex;
     min-height: 100vh;
@@ -108,7 +134,7 @@ background-color: var(--clr-violet-dark-active);
 
 .banner-btn{
   min-width: 140px;
-  width: 100%;
+  width: 280px;
   height: 45px;
   padding-left: 38%;
   font-size: 16px;
@@ -138,5 +164,8 @@ background-color: var(--clr-violet-dark-active);
   border-radius: 3px;
   padding: 0 10px 0 10px;
 }
-
+.text {
+  color: white;
+  padding-top: 30px;
+}
 `
