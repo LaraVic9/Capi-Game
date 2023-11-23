@@ -57,15 +57,15 @@ const AboutUsPage = () => {
                           </div>
                           <ul className='card-list-group text-white'>
                           <li className='list-group-item'>
-                            <span className='item-left'>Games Count: </span>
+                            <span className='item-left'>E-mail: </span>
                             <span className='item-right'>aaa</span>
                           </li>
                           <li className='list-group-item'>
-                            <span className='item-left'>Position: </span>
+                            <span className='item-left'>Github: </span>
                             <span className='item-right'>1</span>
                           </li>
                           <li className='list-group-item'>
-                            <span className='item-left'>Games: </span>
+                            <span className='item-left'>Linkedin: </span>
                             <span className='item-right'>1</span>
                           </li>
                           </ul>
@@ -81,15 +81,15 @@ const AboutUsPage = () => {
                           </div>
                           <ul className='card-list-group text-white'>
                           <li className='list-group-item'>
-                            <span className='item-left'>Games Count: </span>
+                            <span className='item-left'>E-mail: </span>
                             <span className='item-right'>aaa</span>
                           </li>
                           <li className='list-group-item'>
-                            <span className='item-left'>Position: </span>
+                            <span className='item-left'>Github: </span>
                             <span className='item-right'>1</span>
                           </li>
                           <li className='list-group-item'>
-                            <span className='item-left'>Games: </span>
+                            <span className='item-left'>Linkedin: </span>
                             <span className='item-right'>1</span>
                           </li>
                           </ul>
@@ -105,15 +105,15 @@ const AboutUsPage = () => {
                           </div>
                           <ul className='card-list-group text-white'>
                           <li className='list-group-item'>
-                            <span className='item-left'>Games Count: </span>
+                            <span className='item-left'>E-mail: </span>
                             <span className='item-right'>aaa</span>
                           </li>
                           <li className='list-group-item'>
-                            <span className='item-left'>Position: </span>
+                            <span className='item-left'>Github: </span>
                             <span className='item-right'>1</span>
                           </li>
                           <li className='list-group-item'>
-                            <span className='item-left'>Games: </span>
+                            <span className='item-left'>Linkedin: </span>
                             <span className='item-right'>1</span>
                           </li>
                           </ul>
