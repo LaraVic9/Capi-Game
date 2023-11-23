@@ -19,7 +19,7 @@ import {
   Title,
 } from "../../components/common/index";
 
-import { banner_image } from '../../utils/images';  
+import { capivara_two } from '../../utils/images';  
 import { Link } from 'react-router-dom';
   
 const SignUp = () => {
@@ -28,9 +28,10 @@ const SignUp = () => {
 
     return (
         <SignupPageWrapper style={{
-          background : `linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), linear-gradient(248.75deg, rgba(0, 159, 157, 0.41) 0%, rgba(15, 10, 60, 0.41) 38.46%), url(${banner_image}) center/cover no-repeat`}}>
+          background : `linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), linear-gradient(248.75deg, rgba(0, 159, 157, 0.41) 0%, rgba(15, 10, 60, 0.41) 38.46%), url(${capivara_two}) center/100% 115% no-repeat`
+          }} className='background'>
             <div className='sc-aboutus'>
-                <div className='container'> 
+                <div className='container' style={{ background: `linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), linear-gradient(248.75deg, rgba(0, 159, 157, 0.41) 0%, rgba(15, 10, 60, 0.41) 38.46%)` }}> 
                     
                     <section className='section-signup'>
                     <Title titleName={{

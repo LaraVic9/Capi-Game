@@ -22,19 +22,21 @@ import {
 import { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 
-import { banner_image } from '../../utils/images';  
+import { capivaldo } from '../../utils/images';  
 
 const Login = () => {
 
   
 
     return (
-        <LoginUsPageWrapper style = {{
-          background: `linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), linear-gradient(248.75deg, rgba(0, 159, 157, 0.41) 0%, rgba(15, 10, 60, 0.41) 38.46%), url(${banner_image}) center/cover no-repeat`
-        }}>
+        <LoginUsPageWrapper style={{
+          background : `linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), linear-gradient(248.75deg, rgba(0, 159, 157, 0.41) 0%, rgba(15, 10, 60, 0.41) 38.46%), url(${capivaldo}) center/100% 115% no-repeat`
+          }} className='background'>
+
              <div className='sc-aboutus'>
-                <div className='container'> 
-                   
+             
+                <div className='container' style={{ background: `linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), linear-gradient(248.75deg, rgba(0, 159, 157, 0.41) 0%, rgba(15, 10, 60, 0.41) 38.46%)` }}> 
+                 
                    
                
                 <section className='section-login'>
@@ -78,6 +80,8 @@ background-color: var(--clr-violet-dark-active);
   padding-top: 30px;
   padding-left: 30px;
   width: 350px;
+  margin-top: 65px;
+
 }
 
 .section-login {
@@ -88,7 +92,7 @@ background-color: var(--clr-violet-dark-active);
 .sc-aboutus{
   display: flex;
     min-height: 100vh;
-    padding-top: 65px;
+    
 }
 
 .sc-popular {
@@ -167,5 +171,9 @@ background-color: var(--clr-violet-dark-active);
 .text {
   color: white;
   padding-top: 30px;
+}
+.capis {
+  width: 600px;
+  height: 650px;
 }
 `
