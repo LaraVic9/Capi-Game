@@ -84,7 +84,7 @@ const HomePage = () => {
       >
         <div className="container w-100">
           <div className="join-content text-white mx-auto text-center">
-            <h2 className="join-title mb-3">
+            <h2 className="join-title ">
               JOIN THE <span>COMMUNITY</span>
             </h2>
             <p className="lead-text">
@@ -178,5 +178,11 @@ const HomeWrapper = styled.div`
 
   .sc-stores {
     min-height: 841px;
+  }
+  @media (max-width: 800px) {
+    .join-title {
+      font-size: 30px;
+      display: none;
+    } 
   }
 `;

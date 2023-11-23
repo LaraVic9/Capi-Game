@@ -19,21 +19,25 @@ import {
     Title,
   } from "../../components/common/index";
 
-  
+  import { banner_welcome } from '../../utils/images'; 
 const Welcome = () => {
 
   
 
     return (
-        <AboutUsPageWrapper>
+        <AboutUsPageWrapper style={{
+          background : ` url(${banner_welcome}) center/cover no-repeat`}}>
             <div className='sc-aboutus'>
-                <div className='container'> 
-                    <Title titleName={{
-                        firstText: "Wel",
-                        secondText: "Come"
-                    }}/>
-                   
-               
+                <div className='container1'> 
+                    
+                   <p className="lead-title">
+                     Explore the gaming world with us! 
+                   </p>
+                   <p className="lead-text">
+                  
+                   Discover the latest releases, in-depth reviews, and join an active gaming community. Enjoy exclusive offers, stay updated with real-time news, and embark on a journey of endless entertainment. Welcome to our gaming universe, where the excitement never ends!
+                  </p>
+                    
                 <section>
                  
                     <a href='/Login'>
@@ -60,14 +64,20 @@ export default Welcome;
 
 const AboutUsPageWrapper = styled.div`
 background-color: var(--clr-violet-dark-active);
+
 .sc-aboutus{
   display: flex;
     min-height: 100vh;
     padding-top: 65px;
 }
 
+.container1 {
+  padding-left: 30px;
+  width: 500px;
+}
+
 .sc-popular {
-    background-color: var(--clr-violet-dark-active);
+   
     .section-btn {
       margin-top: 60px;
     }
@@ -117,10 +127,15 @@ background-color: var(--clr-violet-dark-active);
   text-transform: uppercase;
   border: 2px solid var(--clr-green-normal);
   margin-top: 33px;
-
+  margin-left: 30px;
+  padding-left: 100px;
 
   .btn-icon{
     margin-right: 16px;
+  }
+
+  .btn-text {
+    
   }
 
   &:hover{
@@ -132,5 +147,14 @@ background-color: var(--clr-violet-dark-active);
   }
 }
 
+.lead-text {
+  color: white;
+}
+
+.lead-title {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
 
 `
