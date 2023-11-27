@@ -62,11 +62,11 @@ const AboutUsPage = () => {
                           </li>
                           <li className='list-group-item'>
                             <span className='item-left'>Github: </span>
-                            <span className='item-right'>1</span>
+                            <span className='item-right'>https://github.com/LennyBla</span>
                           </li>
                           <li className='list-group-item'>
                             <span className='item-left'>Linkedin: </span>
-                            <span className='item-right'>1</span>
+                            <span className='item-right'>https://www.linkedin.com/in/thais-florentin-silvero-da-cruz/</span>
                           </li>
                           </ul>
                       </div>
@@ -82,15 +82,15 @@ const AboutUsPage = () => {
                           <ul className='card-list-group text-white'>
                           <li className='list-group-item'>
                             <span className='item-left'>E-mail: </span>
-                            <span className='item-right'>aaa</span>
+                            <span className='item-right'>suzy.wellen07@gmail.com</span>
                           </li>
                           <li className='list-group-item'>
                             <span className='item-left'>Github: </span>
-                            <span className='item-right'>1</span>
+                            <span className='item-right'>https://github.com/SuzyWellen07</span>
                           </li>
                           <li className='list-group-item'>
                             <span className='item-left'>Linkedin: </span>
-                            <span className='item-right'>1</span>
+                            <span className='item-right'>https://www.linkedin.com/in/suzy-wellen-oliveira/</span>
                           </li>
                           </ul>
                       </div>
@@ -106,15 +106,15 @@ const AboutUsPage = () => {
                           <ul className='card-list-group text-white'>
                           <li className='list-group-item'>
                             <span className='item-left'>E-mail: </span>
-                            <span className='item-right'>aaa</span>
+                            <span className='item-right'>Laravicspereira@gmail.com</span>
                           </li>
                           <li className='list-group-item'>
                             <span className='item-left'>Github: </span>
-                            <span className='item-right'>1</span>
+                            <span className='item-right'>https://github.com/LaraVic9</span>
                           </li>
                           <li className='list-group-item'>
                             <span className='item-left'>Linkedin: </span>
-                            <span className='item-right'>1</span>
+                            <span className='item-right'>https://www.linkedin.com/in/lara-victoria-de-souza-pereira/</span>
                           </li>
                           </ul>
                       </div>
@@ -161,7 +161,7 @@ background-color: var(--clr-violet-dark-active);
   margin-bottom: 80px;
   padding: 16px 32px 24px 32px;
   text-align: center;
-  margin-bottom: -300px;
+  margin-bottom: -350px;
   margin-left: 50px; 
 
 }
@@ -199,16 +199,18 @@ background-color: var(--clr-violet-dark-active);
 .card-1 {
   min-height: 60px;
   width: 360px;
-  margin-bottom: -300px;
+  margin-bottom: -350px;
   padding: 16px 32px 24px 32px;
   text-align: center;
   margin-left: 450px;
+  
 }
 
 .card-2 {
   min-height: 60px;
   width: 360px;
-  margin-bottom: 80px;
+  margin-bottom: 90px;
+  margin-top: -10;
   padding: 16px 32px 24px 32px;
   text-align: center;
   margin-left: 850px;
