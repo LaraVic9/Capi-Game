@@ -3,27 +3,24 @@ import { Provider } from 'react-redux';
 import AppRouter from "./routers/AppRouter";
 import store from "./redux/store/store";
 import AppRouterOutside from "./routers/AppRouterOutside";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import React, {useEffect, useState} from "react";
 
 function App() {
 
-  const user = true
+  const user = false
 
-  if(user){
-
-    return (
-      <div className="App">
-        <Provider store={ store }>
+  return (
+    <div className="App">
+      {user ? (
+        <Provider store={store}>
           <AppRouter />
         </Provider>
-      </div>
-    )
-  } else {
-    console.log('ops');
-      return (
-    
-         <AppRouterOutside/>
-      )
-  }
+      ) : (
+        <AppRouterOutside />
+      )}
+    </div>
+  );
 }
 
 export default App

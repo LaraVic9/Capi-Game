@@ -48,7 +48,7 @@ const SignUp = () => {
                     <input placeholder='confirm password' className='input' type='password'/>
                     </p>
                     <button type="button" className='banner-btn d-flex align-items-center'>     
-                      <span className='btn-text text-green '>Login</span>
+                      <span className='btn-text text-green '>Sign Up</span>
                     </button>
                     <p>
                     <Link to="/Login" className="text">               
