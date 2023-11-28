@@ -1,8 +1,20 @@
 import styled from 'styled-components';
 import { banner_image } from '../../utils/images';
 import { FaGamepad } from 'react-icons/fa';
-
+import { getAuth, signOut } from 'firebase/auth';
 const Banner = () => {
+
+  const signout = () => {
+    const auth = getAuth();
+    signOut(auth).then(() => {
+      // Sign-out successful.
+    }).catch((error) => {
+      // An error happened.
+    });
+
+  }
+
+
   return (
     <BannerWrapper className='d-flex align-items-center justify-content-start' style = {{
       background: `linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), linear-gradient(248.75deg, rgba(0, 159, 157, 0.41) 0%, rgba(15, 10, 60, 0.41) 38.46%), url(${banner_image}) center/cover no-repeat`
@@ -15,7 +27,7 @@ const Banner = () => {
           <span className='btn-icon'>
             <FaGamepad className='text-white' size = { 25 } />
           </span>
-          <span className='btn-text text-green'>play now</span>
+          <span className='btn-text text-green' onClick={signout}>play now</span>
         </button>
       </div>
     </BannerWrapper>
