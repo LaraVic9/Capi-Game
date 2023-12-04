@@ -35,25 +35,36 @@ function App() {
     )
   }
 
-  const [user, setUser] = useState(null);
+ 
   const auth = getAuth();
   
   const ref = useRef()
 
-  useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
-      setUser(user);
+  function useAuth() {
+    const [user, setUser] = useState(null);
 
-    
-    });
+    useEffect(() => {
+      const unsubscribe = onAuthStateChanged(auth, (user) => {
+        console.log('got user: ', user);
+        if(user){
+            setUser(user);
+        }else{
+            setUser(null);
+        }
+  
+      
+      });
+  
+      // Certifique-se de cancelar a assinatura quando não for mais necessário
+      return () => unsubscribe();
+    }, []);
 
-    // Certifique-se de cancelar a assinatura quando não for mais necessário
-    return () => unsubscribe();
-  }, [auth]);
+    return { user }
+  }
 
-  console.log('opa, está fora');
-  const isAuthenticated = !!user;
+  const { user } = useAuth()
 
+ 
   return (
     <div className="App">
       {user ? (

@@ -58,7 +58,7 @@ const AboutUsPage = () => {
                           <ul className='card-list-group text-white'>
                           <li className='list-group-item'>
                             <span className='item-left'>E-mail: </span>
-                            <span className='item-right'>aaa</span>
+                            <span className='item-right'>thais.florentin26@gmail.com</span>
                           </li>
                           <li className='list-group-item'>
                             <span className='item-left'>Github: </span>
